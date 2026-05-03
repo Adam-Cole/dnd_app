@@ -1,6 +1,38 @@
 import json
 import uuid
 import os
+import pandas as pd
+import random
+
+def load_monsters():
+    return pd.read_csv("data/dnd_monsters.csv")
+
+def generate_random_encounter(monsters):
+    monster = monsters.sample(1).iloc[0]
+
+    print("\nEncounter:")
+    print(f"{monster['name']} (CR {monster['challenge_rating']})")
+
+def get_average_level(party, characters):
+    levels = [characters[cid]["level"] for cid in party["members"]]
+    return sum(levels) / len(levels)
+
+def get_party_average_level(data, active_party_id):
+    party = data["parties"][active_party_id]
+    members = party["members"]
+
+    total_level = 0
+
+    for character_id in members:
+        total_level += data["characters"][character_id]["level"]
+
+    return total_level / len(members)
+
+def get_scaled_monsters(monsters, avg_level):
+    return monsters[
+        (monsters["challenge_rating"] >= avg_level - 1) &
+        (monsters["challenge_rating"] <= avg_level + 1)
+    ]
 
 def get_int(prompt):
     while True:
@@ -435,6 +467,53 @@ DM's Tools
         else:
             print("Invalid choice.")
 
+def generate_random_encounter(data, active_party_id, difficulty):
+    monsters = load_monsters()
+
+    average_level = get_party_average_level(data, active_party_id)
+
+    if difficulty == "easy":
+        min_cr = max(0, average_level - 3)
+        max_cr = average_level - 1
+
+    elif difficulty == "normal":
+        min_cr = max(0, average_level - 1)
+        max_cr = average_level + 1
+
+    elif difficulty == "challenging":
+        min_cr = max(0, average_level + 1)
+        max_cr = average_level + 3
+
+    filtered_monsters = monsters[
+        (monsters["cr"] >= min_cr) &
+        (monsters["cr"] <= max_cr)
+    ]
+
+    if filtered_monsters.empty:
+        print("No monsters found for that difficulty.")
+        return
+
+    monster = filtered_monsters.sample(1).iloc[0]
+
+    print("\nRandom Encounter")
+    print("----------------")
+    print(f"Difficulty: {difficulty.title()}")
+    print(f"Average Party Level: {average_level:.1f}")
+    print(f"Monster: {monster['name']}")
+    print("\nMonster Stats")
+    print("-------------")
+
+    print(f"Name: {monster.get('name', 'Unknown')}")
+    print(f"CR: {monster.get('challenge_rating', 'N/A')}")
+    print(f"Type: {monster.get('type', 'N/A')}")
+    print(f"HP: {monster.get('hp', 'N/A')}")
+    print(f"AC: {monster.get('ac', 'N/A')}")
+    print(f"Alignment: {monster.get('alignment', 'N/A')}")
+    print(f"Challenge Rating: {monster['cr']}")
+    print("----------------------------------------------------------------------------------")
+    print("|Random Encounter function still under construction. Please stand by for updates.|")
+    print("----------------------------------------------------------------------------------")
+
 def generate_random_encounter_menu(data, active_party_id):
     if not active_party_id:
         print("No active party selected. Load/select a party first.")
@@ -452,13 +531,13 @@ Generate Random Encounter
         choice = input("Choose difficulty: ")
 
         if choice == "1":
-            print("Random Encounter function under construction. Please stand by for updates.")
+            generate_random_encounter(data, active_party_id, "easy")
 
         elif choice == "2":
-            print("Random Encounter function under construction. Please stand by for updates.")
+            generate_random_encounter(data, active_party_id, "normal")
 
         elif choice == "3":
-            print("Random Encounter function under construction. Please stand by for updates.")
+            generate_random_encounter(data, active_party_id, "challenging")
 
         elif choice == "4":
             break
@@ -475,6 +554,8 @@ def generate_random_loot(data, active_party_id):
 
 def main():
     data = load_data("dnd_data.json")
+    monsters = load_monsters()
+    print(monsters.head())
     active_party_id = None
 
     while True:
