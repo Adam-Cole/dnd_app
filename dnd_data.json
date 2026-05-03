@@ -1,0 +1,496 @@
+{
+    "characters": {
+        "786d92df-d43f-4d9f-bd28-37686fb098f7": {
+            "name": "Drizzt Do'Urden",
+            "race": "Drow",
+            "class": "Ranger",
+            "level": 8,
+            "hp": 72,
+            "ac": 17,
+            "notes": "Dual-wielding skirmisher; high dexterity"
+        },
+        "0ec7bbfe-f127-4006-b676-6f57f14809ee": {
+            "name": "Bruenor Battlehammer",
+            "race": "Shield Dwarf",
+            "class": "Fighter",
+            "level": 8,
+            "hp": 88,
+            "ac": 19,
+            "notes": "Frontline tank; axe and shield"
+        },
+        "6029e7bf-fef6-4769-aa70-e52b07069414": {
+            "name": "Catti-brie",
+            "race": "Human",
+            "class": "Fighter",
+            "level": 7,
+            "hp": 61,
+            "ac": 16,
+            "notes": "Archer; ranged support"
+        },
+        "ea7f7546-6e43-4c70-a748-d17b80f3cda4": {
+            "name": "Wulfgar",
+            "race": "Human",
+            "class": "Barbarian",
+            "level": 8,
+            "hp": 94,
+            "ac": 15,
+            "notes": "Heavy melee damage; warhammer user"
+        },
+        "72c34b4c-5f2b-4ad2-97a1-37b0e281ca71": {
+            "name": "Regis",
+            "race": "Halfling",
+            "class": "Rogue",
+            "level": 6,
+            "hp": 42,
+            "ac": 15,
+            "notes": "Scout, stealth, persuasion"
+        },
+        "028e9eb5-f74a-42cb-b891-384518cc2e89": {
+            "name": "Fig Faeth",
+            "race": "Tiefling",
+            "class": "Bard/Warlock",
+            "level": 8,
+            "hp": 68,
+            "ac": 15,
+            "notes": "\"Rebellious rocker; magic + charisma chaos\""
+        },
+        "afab4e55-3446-4993-a022-9821bb591e16": {
+            "name": "Gorgug Thistlespring",
+            "race": "Half-Orc",
+            "class": "Barbarian/Artificer",
+            "level": 8,
+            "hp": 92,
+            "ac": 16,
+            "notes": "Gentle giant; rage + invention"
+        },
+        "49fbbd5e-4446-4a8f-bbec-0c9dd65cdc77": {
+            "name": "Fabian Seacaster",
+            "race": "Human",
+            "class": "Fighter",
+            "level": 8,
+            "hp": 80,
+            "ac": 18,
+            "notes": "Overconfident duelist; high charisma"
+        },
+        "4da2353c-7e36-4b2f-9aa0-a064820be563": {
+            "name": "Kristen Applebees",
+            "race": "Human",
+            "class": "Cleric",
+            "level": 8,
+            "hp": 70,
+            "ac": 17,
+            "notes": "Faith crisis healer; divine magic"
+        },
+        "57a5be7a-59f2-4acc-bd22-ac2b75847e74": {
+            "name": "Riz Gukgak",
+            "race": "Goblin",
+            "class": "Rogue",
+            "level": 8,
+            "hp": 60,
+            "ac": 17,
+            "notes": "Detective brain; investigation specialist"
+        },
+        "4412b756-5c6e-4062-89c1-d22fdf1b6537": {
+            "name": "Gorion's Ward",
+            "race": "Human",
+            "class": "Fighter",
+            "level": 6,
+            "hp": 52,
+            "ac": 17,
+            "notes": ""
+        },
+        "f6ea8735-83f9-4232-82e3-b1f725b13adc": {
+            "name": "Minsc",
+            "race": "Human",
+            "class": "Ranger",
+            "level": 6,
+            "hp": 60,
+            "ac": 16,
+            "notes": ""
+        },
+        "fa93aca9-ee2d-4802-a55b-695912720538": {
+            "name": "Jaheira",
+            "race": "Half-Elf",
+            "class": "Druid",
+            "level": 6,
+            "hp": 48,
+            "ac": 15,
+            "notes": ""
+        },
+        "2929e4f5-0e7f-42ba-90c4-9b2cf3b0f1b6": {
+            "name": "Imoen",
+            "race": "Human",
+            "class": "Rogue",
+            "level": 5,
+            "hp": 34,
+            "ac": 14,
+            "notes": ""
+        },
+        "fd7bdfea-b0ac-454e-9c85-738b98116fbe": {
+            "name": "Dynaheir",
+            "race": "Human",
+            "class": "Wizard",
+            "level": 6,
+            "hp": 28,
+            "ac": 12,
+            "notes": ""
+        },
+        "9edc07c2-4ed9-4f28-8cb7-a13462ba16de": {
+            "name": "Vex'ahlia",
+            "race": "Half-Elf",
+            "class": "Ranger",
+            "level": 12,
+            "hp": 95,
+            "ac": 17,
+            "notes": ""
+        },
+        "9b6a70d6-b655-47bf-bc69-5ba2254c55e0": {
+            "name": "Vax'ildan",
+            "race": "Half-Elf",
+            "class": "Rogue",
+            "level": 12,
+            "hp": 88,
+            "ac": 18,
+            "notes": ""
+        },
+        "a5a601cf-34a7-4b3d-9397-784abaf398cd": {
+            "name": "Grog",
+            "race": "Goliath",
+            "class": "Barbarian",
+            "level": 12,
+            "hp": 145,
+            "ac": 16,
+            "notes": ""
+        },
+        "ecb28628-61cc-4a93-ad0b-ac6b5e391ea0": {
+            "name": "Pike",
+            "race": "Gnome",
+            "class": "Cleric",
+            "level": 12,
+            "hp": 90,
+            "ac": 20,
+            "notes": ""
+        },
+        "df746d74-0b9a-4188-90f3-5ba2682ce480": {
+            "name": "Scanlan",
+            "race": "Gnome",
+            "class": "Bard",
+            "level": 12,
+            "hp": 82,
+            "ac": 15,
+            "notes": ""
+        },
+        "50d6847b-7552-443e-a83d-8e0025b2bfed": {
+            "name": "Percy",
+            "race": "Human",
+            "class": "Fighter",
+            "level": 12,
+            "hp": 100,
+            "ac": 17,
+            "notes": ""
+        },
+        "2ad42e8b-520e-4299-b4c7-32c869de3404": {
+            "name": "Beauregard",
+            "race": "Human",
+            "class": "Monk",
+            "level": 11,
+            "hp": 98,
+            "ac": 18,
+            "notes": ""
+        },
+        "7599306e-11a8-4672-b602-6c48c659e481": {
+            "name": "Caleb Widogast",
+            "race": "Human",
+            "class": "Wizard",
+            "level": 11,
+            "hp": 72,
+            "ac": 13,
+            "notes": ""
+        },
+        "316847e4-d02c-4f97-9564-0c798af1c678": {
+            "name": "Jester",
+            "race": "Tiefling",
+            "class": "Cleric",
+            "level": 11,
+            "hp": 95,
+            "ac": 17,
+            "notes": ""
+        },
+        "ef9a26b6-76de-4fb7-adf6-ba833ac7b886": {
+            "name": "Fjord",
+            "race": "Half-Orc",
+            "class": "Warlock",
+            "level": 11,
+            "hp": 110,
+            "ac": 16,
+            "notes": ""
+        },
+        "fc2d2415-a0c8-4902-a415-36ae8ca1b4a5": {
+            "name": "Nott",
+            "race": "Goblin",
+            "class": "Rogue",
+            "level": 11,
+            "hp": 85,
+            "ac": 17,
+            "notes": ""
+        },
+        "608dc33b-7fc5-4939-a7c8-20e56c3e513c": {
+            "name": "Yasha",
+            "race": "Aasimar",
+            "class": "Barbarian",
+            "level": 11,
+            "hp": 130,
+            "ac": 15,
+            "notes": ""
+        },
+        "75e92c1d-2e2e-483b-a953-9a3537c23f18": {
+            "name": "Aragorn",
+            "race": "Human",
+            "class": "Ranger",
+            "level": 10,
+            "hp": 110,
+            "ac": 18,
+            "notes": ""
+        },
+        "2cffe9c0-f94e-4dc3-a04c-7d0d7aa4c028": {
+            "name": "Legolas",
+            "race": "Elf",
+            "class": "Fighter/Ranger",
+            "level": 10,
+            "hp": 90,
+            "ac": 17,
+            "notes": ""
+        },
+        "524e41e9-a166-42b8-ad5b-dd5d72d3614e": {
+            "name": "Gimli",
+            "race": "Dwarf",
+            "class": "Fighter",
+            "level": 10,
+            "hp": 120,
+            "ac": 19,
+            "notes": ""
+        },
+        "1c8053a6-f1f8-414e-9c1e-078689f23c9d": {
+            "name": "Gandalf",
+            "race": "Maia",
+            "class": "Wizard",
+            "level": 15,
+            "hp": 100,
+            "ac": 18,
+            "notes": ""
+        },
+        "61973776-2654-4ec4-ac3c-8cf9000ab307": {
+            "name": "Frodo",
+            "race": "Hobbit",
+            "class": "Rogue",
+            "level": 5,
+            "hp": 40,
+            "ac": 14,
+            "notes": ""
+        },
+        "7db1cb67-640e-4b5f-9891-bbc1e3aad617": {
+            "name": "Edgin",
+            "race": "Human",
+            "class": "Bard",
+            "level": 7,
+            "hp": 60,
+            "ac": 15,
+            "notes": ""
+        },
+        "b042ddde-7916-42d4-892e-26121569c204": {
+            "name": "Holga",
+            "race": "Human",
+            "class": "Barbarian",
+            "level": 7,
+            "hp": 95,
+            "ac": 14,
+            "notes": ""
+        },
+        "a5880f1d-32b8-47aa-848d-3a0f2e3fd885": {
+            "name": "Simon",
+            "race": "Half-Elf",
+            "class": "Sorcerer",
+            "level": 7,
+            "hp": 50,
+            "ac": 13,
+            "notes": ""
+        },
+        "f58b8432-78a8-429a-ad0d-4de700a771fe": {
+            "name": "Doric",
+            "race": "Tiefling",
+            "class": "Druid",
+            "level": 7,
+            "hp": 65,
+            "ac": 15,
+            "notes": ""
+        },
+        "bdb73dee-881d-41e4-a405-1debc16e313d": {
+            "name": "Tav",
+            "race": "Human",
+            "class": "Paladin",
+            "level": 6,
+            "hp": 58,
+            "ac": 18,
+            "notes": "Custom player character; frontline leader"
+        },
+        "c6a12860-6605-40c9-ad7f-b966a594dff1": {
+            "name": "Shadowheart",
+            "race": "High Half-Elf",
+            "class": "Cleric",
+            "level": 6,
+            "hp": 52,
+            "ac": 18,
+            "notes": "Healer and support caster"
+        },
+        "9826bad6-cf12-40c7-b34c-be29471e904b": {
+            "name": "Astarion",
+            "race": "High Elf",
+            "class": "Rogue",
+            "level": 6,
+            "hp": 45,
+            "ac": 15,
+            "notes": "Stealth, lockpicking, burst damage"
+        },
+        "e09b8c0a-8134-462f-9279-19d636e2a70d": {
+            "name": "Lae'zel",
+            "race": "Githyanki",
+            "class": "Fighter",
+            "level": 6,
+            "hp": 65,
+            "ac": 17,
+            "notes": "Frontline bruiser"
+        },
+        "4625fffb-d873-431e-8fd7-e0c43ab21319": {
+            "name": "Gale",
+            "race": "Human",
+            "class": "Wizard",
+            "level": 6,
+            "hp": 42,
+            "ac": 13,
+            "notes": "Arcane control and area damage"
+        },
+        "0bcee3aa-501f-4e8c-8434-6d93716c2a44": {
+            "name": "Wyll",
+            "race": "Human",
+            "class": "Warlock",
+            "level": 6,
+            "hp": 50,
+            "ac": 15,
+            "notes": "Charisma caster; ranged magic damage"
+        },
+        "eff6418d-32aa-415c-9cb8-b0f4cca408d3": {
+            "name": "Karlach",
+            "race": "Zariel Tiefling",
+            "class": "Barbarian",
+            "level": 6,
+            "hp": 72,
+            "ac": 15,
+            "notes": "High HP melee damage dealer"
+        },
+        "7baf0bcb-06ab-4b18-81de-8e767ac78abd": {
+            "name": "Halsin",
+            "race": "Wood Elf",
+            "class": "Druid",
+            "level": 6,
+            "hp": 56,
+            "ac": 14,
+            "notes": "Wild shape, healing, nature magic"
+        },
+        "dd5258dd-4dd0-4dda-b788-822654997a80": {
+            "name": "Minthara",
+            "race": "Drow",
+            "class": "Paladin",
+            "level": 6,
+            "hp": 60,
+            "ac": 18,
+            "notes": "Armored melee combatant; divine smites"
+        }
+    },
+    "parties": {
+        "fcf00579-bde8-47b2-98fa-9f84994382b4": {
+            "party_name": "Companions of Icewind Dale",
+            "members": [
+                "786d92df-d43f-4d9f-bd28-37686fb098f7",
+                "0ec7bbfe-f127-4006-b676-6f57f14809ee",
+                "6029e7bf-fef6-4769-aa70-e52b07069414",
+                "ea7f7546-6e43-4c70-a748-d17b80f3cda4",
+                "72c34b4c-5f2b-4ad2-97a1-37b0e281ca71"
+            ]
+        },
+        "fcc79286-f4c6-4e8a-9948-2512b47e30b6": {
+            "party_name": "Fantasy High Bad Kids",
+            "members": [
+                "028e9eb5-f74a-42cb-b891-384518cc2e89",
+                "afab4e55-3446-4993-a022-9821bb591e16",
+                "49fbbd5e-4446-4a8f-bbec-0c9dd65cdc77",
+                "4da2353c-7e36-4b2f-9aa0-a064820be563",
+                "57a5be7a-59f2-4acc-bd22-ac2b75847e74"
+            ]
+        },
+        "cefe3701-4426-4212-a1f7-e35986c5fa00": {
+            "party_name": "Heroes of Baldur's Gate",
+            "members": [
+                "4412b756-5c6e-4062-89c1-d22fdf1b6537",
+                "f6ea8735-83f9-4232-82e3-b1f725b13adc",
+                "fa93aca9-ee2d-4802-a55b-695912720538",
+                "2929e4f5-0e7f-42ba-90c4-9b2cf3b0f1b6",
+                "fd7bdfea-b0ac-454e-9c85-738b98116fbe"
+            ]
+        },
+        "e062d071-d316-43c3-a728-b4bbbaeced96": {
+            "party_name": "Vox Machina",
+            "members": [
+                "9edc07c2-4ed9-4f28-8cb7-a13462ba16de",
+                "9b6a70d6-b655-47bf-bc69-5ba2254c55e0",
+                "a5a601cf-34a7-4b3d-9397-784abaf398cd",
+                "ecb28628-61cc-4a93-ad0b-ac6b5e391ea0",
+                "df746d74-0b9a-4188-90f3-5ba2682ce480",
+                "50d6847b-7552-443e-a83d-8e0025b2bfed"
+            ]
+        },
+        "a6fbc93a-8720-4827-8997-b17b093b5248": {
+            "party_name": "The Mighty Nein",
+            "members": [
+                "2ad42e8b-520e-4299-b4c7-32c869de3404",
+                "7599306e-11a8-4672-b602-6c48c659e481",
+                "316847e4-d02c-4f97-9564-0c798af1c678",
+                "ef9a26b6-76de-4fb7-adf6-ba833ac7b886",
+                "fc2d2415-a0c8-4902-a415-36ae8ca1b4a5",
+                "608dc33b-7fc5-4939-a7c8-20e56c3e513c"
+            ]
+        },
+        "8d2cb7c3-b09a-4230-b2bf-76b8080c92c6": {
+            "party_name": "The Fellowship of the Ring",
+            "members": [
+                "75e92c1d-2e2e-483b-a953-9a3537c23f18",
+                "2cffe9c0-f94e-4dc3-a04c-7d0d7aa4c028",
+                "524e41e9-a166-42b8-ad5b-dd5d72d3614e",
+                "1c8053a6-f1f8-414e-9c1e-078689f23c9d",
+                "61973776-2654-4ec4-ac3c-8cf9000ab307"
+            ]
+        },
+        "0313743e-8526-4542-968f-2bde57b0645c": {
+            "party_name": "Honor Among Thieves Crew",
+            "members": [
+                "7db1cb67-640e-4b5f-9891-bbc1e3aad617",
+                "b042ddde-7916-42d4-892e-26121569c204",
+                "a5880f1d-32b8-47aa-848d-3a0f2e3fd885",
+                "f58b8432-78a8-429a-ad0d-4de700a771fe"
+            ]
+        },
+        "02cda3b3-a6e9-4895-8d9f-2d818cc5911d": {
+            "party_name": "Baldur's Gate 3",
+            "members": [
+                "bdb73dee-881d-41e4-a405-1debc16e313d",
+                "c6a12860-6605-40c9-ad7f-b966a594dff1",
+                "9826bad6-cf12-40c7-b34c-be29471e904b",
+                "e09b8c0a-8134-462f-9279-19d636e2a70d",
+                "4625fffb-d873-431e-8fd7-e0c43ab21319",
+                "0bcee3aa-501f-4e8c-8434-6d93716c2a44",
+                "eff6418d-32aa-415c-9cb8-b0f4cca408d3",
+                "7baf0bcb-06ab-4b18-81de-8e767ac78abd",
+                "dd5258dd-4dd0-4dda-b788-822654997a80"
+            ]
+        }
+    }
+}
