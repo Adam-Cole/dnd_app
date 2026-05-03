@@ -450,7 +450,8 @@ def dms_tools_menu(data, active_party_id):
 DM's Tools
 1. Generate Random Encounter
 2. Generate Random Loot
-3. Back
+3. Monster Directory
+4. Back
 """)
 
         choice = input("Choose an option: ")
@@ -462,6 +463,9 @@ DM's Tools
             generate_random_loot(data, active_party_id)
 
         elif choice == "3":
+            monster_lookup_menu()
+
+        elif choice == "4":
             break
 
         else:
@@ -551,6 +555,54 @@ def generate_random_loot(data, active_party_id):
         return
 
     print("Random Loot function under construction. Please stand by for updates.")
+
+def monster_lookup_menu():
+    monsters = load_monsters()
+
+    while True:
+        search_term = input("\nEnter monster name to search, or 'back' to return: ").lower().strip()
+
+        if search_term == "back":
+            break
+
+        results = monsters[
+            monsters["name"].str.lower().str.contains(search_term, na=False)
+        ]
+
+        if results.empty:
+            print("No monsters found.")
+            continue
+
+        print("\nMatching Monsters:")
+        for i, (_, monster) in enumerate(results.iterrows()):
+            print(f"{i + 1}. {monster['name']} (CR {monster.get('challenge_rating', 'N/A')})")
+
+        choice = get_int("Select a monster to display, or 0 to search again: ")
+
+        if choice == 0:
+            continue
+
+        if 1 <= choice <= len(results):
+            selected_monster = results.iloc[choice - 1]
+            display_monster(selected_monster)
+        else:
+            print("Invalid selection.")
+
+def display_monster(monster):
+    print("\n=== MONSTER ===")
+    print(f"Name: {monster.get('name', 'Unknown')}")
+    print(f"CR: {monster.get('challenge_rating', 'N/A')}")
+    print(f"Type: {monster.get('type', 'N/A')}")
+    print(f"Size: {monster.get('size', 'N/A')}")
+    print(f"Alignment: {monster.get('alignment', 'N/A')}")
+    print(f"HP: {monster.get('hp', 'N/A')}")
+    print(f"AC: {monster.get('ac', 'N/A')}")
+    print("----------------")
+
+    # print anything else dynamically
+    for key, value in monster.items():
+        if key not in ["name", "challenge_rating", "type", "size", "alignment", "hp", "ac"]:
+            print(f"{key}: {value}")
 
 def main():
     data = load_data("dnd_data.json")
